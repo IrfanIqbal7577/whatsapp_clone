@@ -6,3 +6,4 @@ const tabColor = Color.fromRGBO(0, 167, 131, 1);
 const appBarColor = Color.fromRGBO(31, 44, 52, 1);
 const dividerColor = Color.fromRGBO(37, 45, 50, 1);
 const webAppBarColor = Color.fromRGBO(42, 47, 50, 1);
+const searchBarColor = Color.fromRGBO(50, 55, 57, 1);

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/widgets/contact_list.dart';
 import 'package:whatsapp_clone/widgets/web_profile_bar.dart';
+import 'package:whatsapp_clone/widgets/web_search_bar.dart';
 
 // WebScreenLayout: User defined class.
 // StatelessWidget: A widget that does not require mutable state.
@@ -24,6 +25,8 @@ class WebScreenLayout extends StatelessWidget {
                   // Web Profile Bar
                   WebProfileBar(),
                   // Web Search Bar
+                  WebSearchBar(),
+                  // ContactsList 
                   ContactsList(),
                 ],
               ),

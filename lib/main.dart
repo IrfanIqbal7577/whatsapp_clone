@@ -1,5 +1,3 @@
-// 36:00 min
-
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
 import 'package:whatsapp_clone/responsive/responsive_layout.dart';
