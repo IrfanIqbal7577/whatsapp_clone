@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
+import 'package:whatsapp_clone/widgets/contact_list.dart';
 
 // MobileScreenLayout: User defined class.
 // StatelessWidget: A widget that does not require mutable state.
@@ -16,6 +17,8 @@ class MobileScreenLayout extends StatelessWidget {
       // child: The widget below this widget in the tree.
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: appBarColor,
+          elevation: 0.0,
           title: const Text(
             'WhatsApp',
             style: TextStyle(
@@ -62,9 +65,7 @@ class MobileScreenLayout extends StatelessWidget {
             ],
           ),
         ),
-        body: const Center(
-          child: Text('Mobile'),
-        ),
+        body: const ContactsList()
       ),
     );
   }
