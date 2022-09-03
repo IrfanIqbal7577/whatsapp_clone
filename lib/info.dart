@@ -25,10 +25,15 @@ const messages = [
   {
     "isMe": false,
     "text": "Lorem ipsum dolor sit amet.",
-    "time": "10:00 am",
+    "time": "09:00 am",
   },
   {
     "isMe": true,
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eu magna mauris. In dignissim dolor nec mauris posuere tempus. Nulla vestibulum, sapien vitae viverra lacinia.",
+    "time": "10:00 am",
+  },
+  {
+    "isMe": false,
     "text": "Lorem ipsum dolor sit amet.",
     "time": "11:00 am",
   },
