@@ -9,13 +9,15 @@ const info = [
     'name': 'Zaeem Shoaib',
     'message': 'Lorem ipsum dolor sit amet.',
     'time': '2:00 pm',
-    'profilePic': 'https://st.depositphotos.com/2392933/2895/v/600/depositphotos_28954463-stock-illustration-pakistan.jpg'
+    'profilePic':
+        'https://st.depositphotos.com/2392933/2895/v/600/depositphotos_28954463-stock-illustration-pakistan.jpg'
   },
   {
     'name': 'Almas Haider',
     'message': 'Lorem ipsum dolor sit amet.',
     'time': '3:00 pm',
-    'profilePic': 'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg'
+    'profilePic':
+        'https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?cs=srgb&dl=pexels-pixabay-39517.jpg&fm=jpg'
   },
 ];
 
