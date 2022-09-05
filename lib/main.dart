@@ -1,10 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
+import 'package:whatsapp_clone/features/landing/screens/landing_screen.dart';
 import 'package:whatsapp_clone/firebase_options.dart';
-import 'package:whatsapp_clone/responsive/responsive_layout.dart';
-import 'package:whatsapp_clone/screens/mobile_screen_layout.dart';
-import 'package:whatsapp_clone/screens/web_screen_layout.dart';
 
 void main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -37,13 +35,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: backgroundColor,
       ),
       // home: The widget for the default route of the app (Navigator.defaultRouteName, which is /).
-      // ResponsiveLayout: User defined class.
-      home: const ResponsiveLayout(
-        // MobileScreenLayout: User defined class.
-        // WebScreenLayout: User defined class.
-        mobileScreenLayout: MobileScreenLayout(),
-        webScreenLayout: WebScreenLayout(),
-      ),
+      
+      home: const LandingScreen(),
     );
   }
 }
