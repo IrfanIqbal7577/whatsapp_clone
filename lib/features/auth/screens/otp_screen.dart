@@ -1,19 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:whatsapp_clone/colors.dart';
+import 'package:whatsapp_clone/features/auth/controller/auth_controller.dart';
 
-class OTPScreen extends StatefulWidget {
+class OTPScreen extends ConsumerWidget {
   static const String routeName = '/otp-screen';
   final String verificationId;
 
   const OTPScreen({super.key, required this.verificationId});
 
-  @override
-  State<OTPScreen> createState() => _OTPScreenState();
-}
+  void verifyOTP(WidgetRef ref, BuildContext context, String userOTP) {
+    ref.read(authControllerProvider).verifyOTP(
+          context,
+          verificationId,
+          userOTP,
+        );
+  }
 
-class _OTPScreenState extends State<OTPScreen> {
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
     final size = MediaQuery.of(context).size;
 
     return Scaffold(
@@ -29,17 +34,22 @@ class _OTPScreenState extends State<OTPScreen> {
             const Text('We have sent an SMS with a code.'),
             SizedBox(
               width: size.width * 0.5,
-              child: const TextField(
+              child: TextField(
                 textAlign: TextAlign.center,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                   hintText: '- - - - - -',
                   hintStyle: TextStyle(
                     fontSize: 30,
                   ),
                 ),
                 keyboardType: TextInputType.number,
+                onChanged: (value) {
+                  if (value.length == 6) {
+                    verifyOTP(ref, context, value.trim());
+                  }
+                },
               ),
-            )
+            ),
           ],
         ),
       ),
