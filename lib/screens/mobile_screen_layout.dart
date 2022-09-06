@@ -2,19 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:whatsapp_clone/colors.dart';
 import 'package:whatsapp_clone/widgets/contact_list.dart';
 
-// MobileScreenLayout: User defined class.
-// StatelessWidget: A widget that does not require mutable state.
 class MobileScreenLayout extends StatelessWidget {
   const MobileScreenLayout({Key? key}) : super(key: key);
 
   @override
-  // build(BuildContext context) → Widget: Describes the part of the user interface represented by this widget.
   Widget build(BuildContext context) {
-    // DefaultTabController: The TabController for descendant widgets that don't specify one explicitly.
     return DefaultTabController(
-      // length: The total number of tabs.
       length: 3,
-      // child: The widget below this widget in the tree.
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: appBarColor,

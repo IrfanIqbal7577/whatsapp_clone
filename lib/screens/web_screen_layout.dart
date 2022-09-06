@@ -6,18 +6,12 @@ import 'package:whatsapp_clone/widgets/web_chat_appbar.dart';
 import 'package:whatsapp_clone/widgets/web_profile_bar.dart';
 import 'package:whatsapp_clone/widgets/web_search_bar.dart';
 
-// WebScreenLayout: User defined class.
-// StatelessWidget: A widget that does not require mutable state.
 class WebScreenLayout extends StatelessWidget {
   const WebScreenLayout({Key? key}) : super(key: key);
 
   @override
-  // build(BuildContext context) → Widget: Describes the part of the user interface represented by this widget.
   Widget build(BuildContext context) {
-    // Scaffold: Implements the basic Material Design visual layout structure.
     return Scaffold(
-      // body: The primary content of the scaffold.
-      // Center: A widget that centers its child within itself.
       body: Row(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
