@@ -4,7 +4,7 @@ import 'package:whatsapp_clone/colors.dart';
 import 'package:whatsapp_clone/common/widgets/custom_button.dart';
 
 class LoginScreen extends StatefulWidget {
-  static const routeName = '/login_screen';
+  static const routeName = '/login-screen';
 
   const LoginScreen({super.key});
 
