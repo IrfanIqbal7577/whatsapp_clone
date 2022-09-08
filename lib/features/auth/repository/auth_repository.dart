@@ -61,6 +61,7 @@ class AuthRepository {
       );
       await auth.signInWithCredential(credential);
 
+      // ignore: use_build_context_synchronously
       Navigator.pushNamedAndRemoveUntil(
         context,
         UserInformationScreen.routeName,
